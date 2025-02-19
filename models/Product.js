@@ -6,13 +6,13 @@ const productSchema = new mongoose.Schema({
     required: [true, 'Product name is required'],
     unique: true,  // Ensure unique product names
     trim: true,  
-    maxlength: [10, 'Product name must be at most 10 characters long'],  // Maximum length of 10 characters
+    maxlength: [20, 'Product name must be at most 10 characters long'],  // Maximum length of 10 characters
   },
 
   shopname: {
     type: String,
     trim: true,  // Ensure no extra spaces are stored
-    maxlength: [10, 'Shop name must be at most 50 characters long'],  // Optional: Maximum length constraint
+    maxlength: [20, 'Shop name must be at most 50 characters long'],  // Optional: Maximum length constraint
   },
 
   quantity: {
